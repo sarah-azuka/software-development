@@ -1,66 +1,771 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- =========================================
+         BASIC PAGE SETTINGS
+    ========================================== -->
+
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sarah's Portfolio</title>
+
+    <!-- Helps search engines understand your portfolio -->
+
+    <meta
+      name="description"
+      content="Portfolio of Sarah Azuka, a Software Developer and Data Analyst building responsive web applications, data-driven solutions and healthcare technology projects."
+    />
+
+    <meta
+      name="keywords"
+      content="Sarah Azuka, Software Developer, Data Analyst, Web Developer, JavaScript, Python, SQL, Power BI, HTML, CSS, Healthcare Technology"
+    />
+
+    <meta name="author" content="Sarah Azuka" />
+
+    <title>Sarah Azuka | Software Developer & Data Analyst</title>
+
+    <!-- CSS FILE -->
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="hero-container">
-      <header>
-        <h1>Sarah Developer</h1>
-        <img src="_PVI3080.JPG" />
-        <nav>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-    </div>
+    <!-- =========================================
+     HEADER / NAVIGATION
+========================================= -->
+
+    <header class="header">
+      <nav class="navbar">
+        <!-- LOGO -->
+
+        <a href="#home" class="logo"> Sarah<span>.</span> </a>
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <!-- NAVIGATION LINKS -->
+
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="#home"> Home </a>
+          </li>
+
+          <li>
+            <a href="#about"> About </a>
+          </li>
+
+          <li>
+            <a href="#skills"> Skills </a>
+          </li>
+
+          <li>
+            <a href="#projects"> Projects </a>
+          </li>
+
+          <li>
+            <a href="#experience"> Experience </a>
+          </li>
+
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- =========================================
+     MAIN CONTENT
+========================================= -->
 
     <main>
-      <section class="hero">
-        <h2>Hello, I'm Sarah</h2>
-        <p>I am learning web development and building useful websites.</p>
-        <a class="button" href="#projects">View My Projects</a>
-      </section>
+      <!-- =========================================
+     HERO SECTION
+========================================= -->
 
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I am a beginner web developer learning HTML, CSS and JavaScript.</p>
-      </section>
+      <section class="hero" id="home">
+        <!-- HERO TEXT -->
 
-      <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript - Beginner</li>
-        </ul>
-      </section>
+        <div class="hero-content">
+          <p class="hero-label">SOFTWARE DEVELOPER</p>
 
-      <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-          <h3>Shop Calculator</h3>
-          <p>A simple calculator for product cost, selling price and profit.</p>
+          <h1>
+            Hi, I'm
+
+            <span> Sarah Azuka. </span>
+          </h1>
+
+          <h2>I build useful digital solutions.</h2>
+
+          <p class="hero-description">
+            I'm a software developer and data analyst focused on building
+            responsive web applications and data-driven solutions using
+            JavaScript, Python, SQL and modern development tools.
+          </p>
+
+          <!-- HERO BUTTONS -->
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn"> View My Projects </a>
+
+          <!-- PROFESSIONAL LINKS -->
+
+          <div class="social-links">
+            <!-- GITHUB -->
+
+            <a
+              href="https://github.com/sarah-azuka"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+
+            <!-- LINKEDIN -->
+
+            <a
+              href="https://www.linkedin.com/in/sarah-azuka"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:sarahobiajuluazuka@gmail.com"> Email Me ↗ </a>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Student List</h3>
-          <p>A webpage that displays students from a JavaScript array.</p>
+
+        <!-- HERO IMAGE -->
+
+        <div class="hero-image">
+          <div class="image-background">
+            <img
+              src="/_PVI3080.JPG"
+              alt="Sarah Azuka - Software Developer and Data Analyst"
+            />
+          </div>
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: sarah@example.com</p>
+      <!-- =========================================
+     ABOUT SECTION
+========================================= -->
+
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="section-label">ABOUT ME</p>
+
+          <h2>Building at the intersection of software and data.</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- ABOUT TEXT -->
+
+          <div class="about-text">
+            <p>
+              I'm Sarah Azuka, a software developer and healthcare data analyst with
+              experience building practical digital and data-driven solutions.
+            </p>
+
+            <p>
+              My background in data analytics gives me a different perspective
+              on software development. I don't only think about how an
+              application looks, I also think about the information it
+              collects, processes and communicates.
+            </p>
+
+            <p>
+              I work with HTML, CSS, JavaScript, Python, SQL and data analytics
+              technologies such as Pandas, Power BI, and Excel.
+            </p>
+
+            <p>
+              I'm particularly interested in software development, healthcare
+              technology, digital health and applications that solve practical
+              problems.
+            </p>
+          </div>
+
+          <!-- ABOUT HIGHLIGHTS -->
+
+          <div class="about-cards">
+            <div class="about-card">
+              <span> 01 </span>
+
+              <h3>Software Development</h3>
+
+              <p>Building responsive and interactive web applications.</p>
+            </div>
+
+            <div class="about-card">
+              <span> 02 </span>
+
+              <h3>Data Analytics</h3>
+
+              <p>Transforming data into useful insights and visualizations.</p>
+            </div>
+
+            <div class="about-card">
+              <span> 03 </span>
+
+              <h3>Healthcare Technology</h3>
+
+              <p>
+                Exploring how software and data can improve healthcare delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     SKILLS SECTION
+========================================= -->
+
+      <section class="section alternate-section" id="skills">
+        <div class="section-heading">
+          <p class="section-label">MY TOOLKIT</p>
+
+          <h2>Skills & Technologies</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- FRONTEND -->
+
+          <div class="skill-card">
+            <div class="skill-icon">&lt;/&gt;</div>
+
+            <h3>Frontend Development</h3>
+
+            <p>Technologies I use to build responsive web interfaces.</p>
+
+            <div class="skill-tags">
+              <span>HTML5</span>
+
+              <span>CSS</span>
+
+              <span>JavaScript</span>
+
+              <span>Responsive Design</span>
+
+              <span>DOM Manipulation</span>
+            </div>
+          </div>
+
+          <!-- PROGRAMMING -->
+
+          <div class="skill-card">
+            <div class="skill-icon">{ }</div>
+
+            <h3>Programming & Data</h3>
+
+            <p>
+              Technologies used for programming, data manipulation and analysis.
+            </p>
+
+            <div class="skill-tags">
+              <span>Python</span>
+
+              <span>Pandas</span>
+
+              <span>NumPy</span>
+
+              <span>SQL</span>
+            </div>
+          </div>
+
+          <!-- DATA ANALYTICS -->
+
+          <div class="skill-card">
+            <div class="skill-icon">◫</div>
+
+            <h3>Data Analytics</h3>
+
+            <p>Tools I use to analyze, visualize and communicate data.</p>
+
+            <div class="skill-tags">
+              <span>Power BI</span>
+
+              <span>Excel</span>
+
+              <span>Data Visualization</span>
+
+              <span>Statistics</span>
+            </div>
+          </div>
+
+          <!-- DEVELOPER TOOLS -->
+
+          <div class="skill-card">
+            <div class="skill-icon">⚙</div>
+
+            <h3>Developer Tools</h3>
+
+            <p>
+              Tools that support my software development and analytical
+              workflow.
+            </p>
+
+            <div class="skill-tags">
+              <span>Git</span>
+
+              <span>GitHub</span>
+
+              <span>VS Code</span>
+
+              <span>Jupyter Notebook</span>
+
+              <span>SQL Server</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+     PROJECTS SECTION
+========================================= -->
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-label">MY WORK</p>
+
+          <h2>Featured Projects</h2>
+
+          <p class="section-description">
+            A selection of software development, data analytics and healthcare
+            projects I've worked on.
+          </p>
+        </div>
+
+        <!-- PROJECT FILTER BUTTONS -->
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+
+          <button class="filter-btn" data-filter="web">Web Development</button>
+
+          <button class="filter-btn" data-filter="data">Data Analytics</button>
+
+          <button class="filter-btn" data-filter="health">Healthcare</button>
+        </div>
+
+        <!-- PROJECT GRID -->
+
+        <div class="projects-grid">
+          <!-- =================================
+             PROJECT 1
+             INVENTORY MANAGEMENT APP
+        ================================== -->
+
+          <article class="project-card" data-category="web">
+            <div class="project-top">
+              <span class="project-number"> 01 </span>
+
+              <span class="project-type"> WEB APP </span>
+            </div>
+
+            <h3>Inventory Management App</h3>
+
+            <p>
+              An interactive inventory management application for tracking
+              products, quantities, prices, profit and total stock value.
+            </p>
+
+            <div class="project-features">
+              <p>✓ Add products dynamically</p>
+
+              <p>✓ Remove products</p>
+
+              <p>✓ Calculate stock value</p>
+
+              <p>✓ Calculate profit per item</p>
+
+              <p>✓ Low-stock warning system</p>
+            </div>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+
+              <span>CSS</span>
+
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <!-- Add deployed URL when available -->
+
+              <a href="#" class="demo-link"> Live Demo ↗ </a>
+
+              <a
+                href="https://github.com/sarah-azuka"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- =================================
+             PROJECT 2
+             FITLAB
+        ================================== -->
+
+          <article class="project-card" data-category="web">
+            <div class="project-top">
+              <span class="project-number"> 02 </span>
+
+              <span class="project-type"> WEBSITE </span>
+            </div>
+
+            <h3>FitLab by Dee</h3>
+
+            <p>
+              A responsive fashion website designed to showcase different
+              clothing collections through a modern visual interface.
+            </p>
+
+            <div class="project-features">
+              <p>✓ Responsive interface</p>
+
+              <p>✓ Collection gallery</p>
+
+              <p>✓ Bridal collection</p>
+
+              <p>✓ Corporate collection</p>
+
+              <p>✓ Traditional collection</p>
+            </div>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+
+              <span>CSS</span>
+
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#"> Live Demo ↗ </a>
+
+              <a
+                href="https://github.com/sarah-azuka"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- =================================
+             PROJECT 3
+             LOGIN INTERFACE
+        ================================== -->
+
+          <article class="project-card" data-category="web">
+            <div class="project-top">
+              <span class="project-number"> 03 </span>
+
+              <span class="project-type"> WEB APP </span>
+            </div>
+
+            <h3>Login Interface</h3>
+
+            <p>
+              A responsive login interface featuring client-side validation,
+              password visibility controls and user-friendly feedback.
+            </p>
+
+            <div class="project-features">
+              <p>✓ Input validation</p>
+
+              <p>✓ Password visibility</p>
+
+              <p>✓ Error handling</p>
+
+              <p>✓ Responsive design</p>
+            </div>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+
+              <span>CSS</span>
+
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#"> Live Demo ↗ </a>
+
+              <a
+                href="https://github.com/sarah-azuka"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- =================================
+             PROJECT 4
+             COUNTER APP
+        ================================== -->
+
+          <article class="project-card" data-category="web">
+            <div class="project-top">
+              <span class="project-number"> 04 </span>
+
+              <span class="project-type"> JAVASCRIPT </span>
+            </div>
+
+            <h3>JavaScript Counter App</h3>
+
+            <p>
+              An interactive JavaScript application demonstrating event
+              handling, functions, state changes and DOM manipulation.
+            </p>
+
+            <div class="project-features">
+              <p>✓ Increase counter</p>
+
+              <p>✓ Decrease counter</p>
+
+              <p>✓ Reset counter</p>
+
+              <p>✓ DOM manipulation</p>
+            </div>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+
+              <span>CSS</span>
+
+              <span>JavaScript</span>
+
+              <span>DOM</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#"> Live Demo ↗ </a>
+
+              <a
+                href="https://github.com/sarah-azuka"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </article>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/sarah-azuka"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project ↗
+              </a>
+
+              <a
+                href="https://github.com/sarah-azuka"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </article>
+
+      <!-- =========================================
+     EXPERIENCE SECTION
+========================================= -->
+
+      <section class="section alternate-section" id="experience">
+        <div class="section-heading">
+          <p class="section-label">EXPERIENCE</p>
+
+          <h2>Experience & Leadership</h2>
+        </div>
+
+        <div class="experience-container">
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Data Analytics Instructor / Facilitator</h3>
+
+                <p class="company">Itech Vocational Charity</p>
+              </div>
+
+              <span class="date"> Current </span>
+            </div>
+
+            <p>
+              Facilitate practical data analytics training and support learners
+              in developing industry-relevant analytical skills.
+            </p>
+
+            <ul>
+              <li>Facilitate SQL training and practical database exercises.</li>
+
+              <li>Teach data visualization and Power BI.</li>
+
+              <li>
+                Support learners through assignments and practical projects.
+              </li>
+
+              <li>
+                Facilitate statistics and probability concepts for data
+                analytics.
+              </li>
+            </ul>
+          </article>
+
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Program Support Officer</h3>
+
+                <p class="company">Itech Development Charities</p>
+              </div>
+            </div>
+
+            <p>
+              Support technology-focused programmes designed to expand digital
+              skills and opportunities for young people.
+            </p>
+
+            <ul>
+              <li>Support project planning and implementation.</li>
+
+              <li>Coordinate technology and digital skills initiatives.</li>
+
+              <li>Contribute to programme proposals and reporting.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================================
+     CONTACT SECTION
+========================================= -->
+
+      <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <p class="contact-label">GET IN TOUCH</p>
+
+          <h2>Let's build something useful.</h2>
+
+          <p class="contact-description">
+            I'm open to software development, data analytics, digital health,
+            internship and collaborative opportunities.
+          </p>
+
+          <div class="contact-grid">
+            <!-- EMAIL -->
+
+            <a href="mailto:sarahobiajuluazuka@gmail.com" class="contact-card">
+              <span> Email </span>
+
+              <strong> sarahobiajuluazuka@gmail.com </strong>
+            </a>
+
+            <!-- LINKEDIN -->
+
+            <a
+              href="https://www.linkedin.com/in/sarah-azuka"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card"
+            >
+              <span> LinkedIn </span>
+
+              <strong> Connect with me ↗ </strong>
+            </a>
+
+            <!-- GITHUB -->
+
+            <a
+              href="https://github.com/sarah-azuka"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card"
+            >
+              <span> GitHub </span>
+
+              <strong> View my repositories ↗ </strong>
+            </a>
+          </div>
+
+          <!-- DIRECT EMAIL BUTTON -->
+
+          <div class="contact-action">
+            <a
+              href="mailto:sarahobiajuluazuka@gmail.com?subject=Opportunity%20for%20Sarah%20Azuka"
+              class="btn primary-btn"
+            >
+              Send Me an Email
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- =========================================
+     FOOTER
+========================================= -->
+
     <footer>
-      <p>&copy; 2026 Sarah Developer</p>
+      <div class="footer-container">
+        <a href="#home" class="footer-logo"> Sarah<span>.</span> </a>
+
+        <p>
+          © <span id="year"></span>
+          Sarah Azuka. Built with HTML, CSS & JavaScript.
+        </p>
+
+        <div class="footer-links">
+          <a
+            href="https://github.com/sarah-azuka"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sarah-azuka"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a href="mailto:sarahobiajuluazuka@gmail.com"> Email </a>
+
+          <a href="#home" class="back-top"> Back to top ↑ </a>
+        </div>
+      </div>
     </footer>
+
+    <!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+    <script src="script.js"></script>
   </body>
 </html>
